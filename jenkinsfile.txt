@@ -1,6 +1,8 @@
 pipeline
 {
     agent any
+stages
+{
     stage ("build")
     {
     steps
@@ -14,5 +16,6 @@ pipeline
     {
         echo "testing the project"
     }
+}
 }
 }
