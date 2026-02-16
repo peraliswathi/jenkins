@@ -8,6 +8,7 @@ stages
     steps
     {
         echo "building project"
+     sh 'javac HelloWorld.java'
     }
     }
     stage ("test")
@@ -15,7 +16,7 @@ stages
     steps
     {
         echo "testing the project"
-    }
+sh 'java HelloWorld'    }
 }
 }
 }
